@@ -1,0 +1,13 @@
+version: "3.7"
+
+volumes:
+  projects:
+
+services:
+  devbox:
+    image: ubuntu
+    container_name: ubuntu
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - .:/home/fifo
